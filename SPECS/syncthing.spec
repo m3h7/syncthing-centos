@@ -40,7 +40,7 @@ cp etc/linux-systemd/user/syncthing.service %{buildroot}/etc/systemd/user/
 /etc/systemd/user/syncthing.service
 
 %changelog
-* Tue Nov 29 1026 vdar
+* Tue Nov 29 2016 vdar
 - Updated to version 0.14.13
 
 * Thu Sep 22 2016 Logan Owen <logan@s1network.com>
