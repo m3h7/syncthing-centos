@@ -1,5 +1,5 @@
 Name:		syncthing
-Version:	0.14.21
+Version:	0.14.22
 Release:	0%{?dist}
 Summary:	Open, trustworthy and decentralized sync
 # Set to amd64 or 386
