@@ -1,5 +1,5 @@
 Name:		syncthing
-Version:	0.14.30
+Version:	0.14.42
 Release:	0%{?dist}
 Summary:	Open, trustworthy and decentralized sync
 # Set to amd64 or 386
@@ -40,6 +40,9 @@ cp etc/linux-systemd/user/syncthing.service %{buildroot}/etc/systemd/user/
 /etc/systemd/user/syncthing.service
 
 %changelog
+* Mon Jan 1 2018 vdar
+- Updated to version 0.14.42
+
 * Tue Nov 29 2016 vdar
 - Updated to version 0.14.13
 
