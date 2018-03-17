@@ -3,7 +3,8 @@
 ## RPM Install
 
 ```
-rpm -Uvh https://github.com/vdar/syncthing-centos/releases/download/v0.14.43/syncthing-0.14.43-0.el7.centos.x86_64.rpm
+yum install -y policycoreutils-python
+rpm -Uvh https://github.com/vdar/syncthing-centos/releases/download/v0.14.45/syncthing-0.14.45-0.el7.centos.x86_64.rpm
 ```
 
 
@@ -23,7 +24,7 @@ git clone https://github.com/vdar/syncthing-centos.git rpmbuild/
 mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 echo '%_topdir %(echo $HOME)/rpmbuild' > ~/.rpmmacros
 cd ~/rpmbuild/SOURCES/
-wget https://github.com/syncthing/syncthing/releases/download/v0.14.43/syncthing-linux-amd64-v0.14.43.tar.gz
+wget https://github.com/syncthing/syncthing/releases/download/v0.14.45/syncthing-linux-amd64-v0.14.45.tar.gz
 cd ~/rpmbuild/SPECS/
 rpmbuild -bb syncthing.spec
 ```
