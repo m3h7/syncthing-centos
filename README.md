@@ -3,8 +3,8 @@
 ## RPM Install
 
 ```
-yum install -y policycoreutils-python
-rpm -Uvh https://github.com/m2h7/syncthing-centos/releases/download/v1.0.0/syncthing-1.0.0-1.el7.centos.x86_64.rpm
+sudo yum install -y policycoreutils-python
+sudo rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.0.0-1/syncthing-1.0.0-1.el7.x86_64.rpm
 ```
 
 
