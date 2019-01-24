@@ -1,6 +1,6 @@
 Name:		syncthing
-Version:	0.14.49
-Release:	0%{?dist}
+Version:	1.0.0
+Release:	1%{?dist}
 Summary:	Open, trustworthy and decentralized sync
 # Set to amd64 or 386
 %define arch	amd64
@@ -8,7 +8,7 @@ Summary:	Open, trustworthy and decentralized sync
 Group:		Applications/System
 License:	MPLv2
 URL:		https://github.com/syncthing/syncthing
-Source0:	https://github.com/syncthing/syncthing/releases/download/v${version}/syncthing-linux-%{arch}-v%{version}.tar.gz
+Source0:	https://github.com/syncthing/syncthing/releases/download/v%{version}/syncthing-linux-%{arch}-v%{version}.tar.gz
 
 Requires:	policycoreutils-python
 
@@ -40,6 +40,10 @@ cp etc/linux-systemd/user/syncthing.service %{buildroot}/etc/systemd/user/
 /etc/systemd/user/syncthing.service
 
 %changelog
+* Thu Jan 24 2019 mahiso 1.0.0-1
+- Updated to Syncthing version 1.0.0
+- Build using Make
+
 * Wed Jul 25 2018 eashman
 - Updated to version 0.14.49
 
