@@ -1,4 +1,4 @@
-VERSION=1.0.0
+VERSION=1.1.4
 RELEASE=1
 
 .PHONY: all
@@ -15,7 +15,7 @@ build_rpm:
 	rpmbuild --define "_topdir `pwd`/build" -bb build/SPECS/syncthing.spec
 
 install:
-	install -y build/RPMS/x86_64/syncthing-${VERSION}-${RELEASE}.el7.x86_64.rpm
+	yum install -y build/RPMS/x86_64/syncthing-${VERSION}-${RELEASE}.el7.x86_64.rpm
 
 clean:
 	rm -rf build

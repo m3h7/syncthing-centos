@@ -3,7 +3,7 @@
 ## RPM Install
 
 ```
-rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.0.0/syncthing-1.0.0-1.el7.centos.x86_64.rpm
+rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.1.4-1/syncthing-1.1.4-1.el7.centos.x86_64.rpm
 ```
 
 

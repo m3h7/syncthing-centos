@@ -1,5 +1,5 @@
 Name:		syncthing
-Version:	1.0.0
+Version:	1.1.4
 Release:	1%{?dist}
 Summary:	Open, trustworthy and decentralized sync
 # Set to amd64 or 386
@@ -40,6 +40,9 @@ cp etc/linux-systemd/user/syncthing.service %{buildroot}/etc/systemd/user/
 /etc/systemd/user/syncthing.service
 
 %changelog
+* Thu Jun 02 2019 mahiso
+- Updated to Syncthing version 1.1.4
+
 * Thu Jan 24 2019 mahiso 1.0.0-1
 - Updated to Syncthing version 1.0.0
 - Build using Make
