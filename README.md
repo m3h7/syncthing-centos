@@ -3,7 +3,8 @@
 ## RPM Install
 
 ```
-rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.3.0-1/syncthing-1.3.0-1.el7.x86_64.rpm
+sudo yum install -y policycoreutils-python
+sudo rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.3.0-1/syncthing-1.3.0-1.el7.x86_64.rpm
 ```
 
 
@@ -12,7 +13,7 @@ rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.3.0-1/syn
 #### Install rpmbuild requirements
 
 ```
-yum install -y yum-utils vim rpm-build rpmdevtools redhat-rpm-config make git
+sudo yum install -y policycoreutils-python yum-utils vim rpm-build rpmdevtools redhat-rpm-config make git
 ```
 
 #### Clone the repo and build rpm package
