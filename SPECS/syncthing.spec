@@ -1,5 +1,5 @@
 Name:		syncthing
-Version:	1.3.0
+Version:	1.3.3
 Release:	1%{?dist}
 Summary:	Open, trustworthy and decentralized sync
 # Set to amd64 or 386
@@ -10,7 +10,7 @@ License:	MPLv2
 URL:		https://github.com/syncthing/syncthing
 Source0:	https://github.com/syncthing/syncthing/releases/download/v%{version}/syncthing-linux-%{arch}-v%{version}.tar.gz
 
-Requires:	policycoreutils-python
+Requires:	policycoreutils-python-utils
 
 %description
 Syncthing replaces proprietary sync and cloud services with something open,
@@ -40,6 +40,10 @@ cp etc/linux-systemd/user/syncthing.service %{buildroot}/etc/systemd/user/
 /etc/systemd/user/syncthing.service
 
 %changelog
+* Sat Jan 18 2020 mahiso
+- Updated to Syncthing version 1.3.3
+- Updated to CentoOS 8
+
 * Fri Oct 25 2019 mahiso
 - Updated to Syncthing version 1.3.0
 

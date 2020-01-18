@@ -3,8 +3,7 @@
 ## RPM Install
 
 ```
-sudo yum install -y policycoreutils-python
-sudo rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.3.0-1/syncthing-1.3.0-1.el7.x86_64.rpm
+sudo dnf install -y https://github.com/m3h7/syncthing-centos/releases/download/v1.3.3-1/syncthing-1.3.3-1.el8.x86_64.rpm
 ```
 
 
@@ -13,13 +12,13 @@ sudo rpm -Uvh https://github.com/m3h7/syncthing-centos/releases/download/v1.3.0-
 #### Install rpmbuild requirements
 
 ```
-sudo yum install -y policycoreutils-python yum-utils vim rpm-build rpmdevtools redhat-rpm-config make git
+sudo dnf install -y policycoreutils-python-utils rpm-build rpmdevtools make git
 ```
 
 #### Clone the repo and build rpm package
 
 ```
-git clone https://github.com/vdar/syncthing-centos.git
+git clone https://github.com/m3h7/syncthing-centos.git
 cd syncthing-centos
 make prepare
 make
@@ -36,5 +35,4 @@ sudo make install
 sudo systemctl start syncthing@<username>
 ```
 
-You can now access the GUI through this URL:
-http://localhost:8384
+You can now access the GUI through this URL: [http://localhost:8384](http://localhost:8384)
