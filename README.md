@@ -3,7 +3,7 @@
 ## RPM Install
 
 ```
-sudo dnf install -y https://github.com/m3h7/syncthing-centos/releases/download/v1.3.3-1/syncthing-1.3.3-1.el8.x86_64.rpm
+sudo dnf install -y https://github.com/m3h7/syncthing-centos/releases/download/v1.11.1-1/syncthing-1.11.1-1.el8.x86_64.rpm
 ```
 
 
